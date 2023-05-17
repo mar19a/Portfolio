@@ -83,7 +83,7 @@ blockquote p {
     transition: transform 2s;
   }
   
-  .ending-statement {
+  .standout {
     grid-column: 2 / span 10;
     padding: 2rem;
     background: var(--dark-bg); /* changed to semi-transparent */
