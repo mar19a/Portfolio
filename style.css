@@ -6,16 +6,14 @@ canvas {
   left: 0;
 }
 
-
 :root {
-  --dark-bg: rgba(15, 15, 15, 0.95);
+  --dark-bg: rgba(15, 15, 15, 0.30); /* changed to semi-transparent */
   --spacing: 350px;
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 
 main {
   width: 100vw;
@@ -42,24 +40,22 @@ canvas {
   left: 0;
 }
 
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
 
-
-  header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
-    padding: 2rem;
-    margin-bottom: var(--spacing);
-  }
-
-  section {
-    grid-column: 2 / 8;
-    padding: 1rem;
-    background: var(--dark-bg);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin-bottom: var(--spacing);
-  }
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
 
   blockquote {
     margin: 0;
@@ -86,31 +82,31 @@ blockquote p {
     transform: translate3d(100%, 0, 0);
     transition: transform 2s;
   }
-  .standout {
+  
+  .ending-statement {
     grid-column: 2 / span 10;
     padding: 2rem;
-    background: var(--dark-bg);
+    background: var(--dark-bg); /* changed to semi-transparent */
     font-size: 1.5rem;
     line-height: 1.7;
     margin-bottom: var(--spacing);
-    border: 2px solid white;
-    color: #F9A826; /* This is a golden color, change it as you see fit */
-}
-.contact-btn {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--dark-bg);
-  background-color: #F9A826; /* This is a golden color, change it as you see fit */
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 2rem;
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-  background-color: #E58F14; /* Slightly darker shade for hover effect */
-}
+  }
+  
+  .contact-btn {
+    font-family: elevon, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--dark-bg);
+    background-color: #F9A826;;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #E58F14;
+  }
