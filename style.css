@@ -83,3 +83,13 @@ canvas {
     transform: translate3d(100%, 0, 0);
     transition: transform 2s;
   }
+  .standout {
+    grid-column: 2 / span 10;
+    padding: 2rem;
+    background: var(--dark-bg);
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing);
+    border: 2px solid white;
+    color: #F9A826; /* This is a golden color, change it as you see fit */
+}
