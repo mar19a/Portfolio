@@ -69,8 +69,8 @@ canvas {
   }
 
   blockquote p {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     font-size: 4rem;
     display: inline;
     line-height: 1;
