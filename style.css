@@ -115,3 +115,12 @@ blockquote p {
     transition: transform 1s;
     perspective: 1000px;
   }
+  .github-link {
+    color: white;
+    text-decoration: none;
+  }
+  .github-link img {
+    width: 16px;  /* Adjust size as needed */
+    height: 16px; /* Adjust size as needed */
+    margin-right: 5px;
+  }
