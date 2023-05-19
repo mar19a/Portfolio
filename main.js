@@ -126,6 +126,7 @@ function animate() {
 
   renderer.render(scene, camera);
 }
+
 const projectDescriptions = document.querySelectorAll('.project-description');
 
 function moveProjectDescriptions() {
@@ -153,4 +154,32 @@ document.addEventListener('scroll', function() {
     quoteBlock.style.transform = 'translate3d(100%, 0, 0)';
   }
 });
+
+
+function moveHeader() {
+  const t = document.body.getBoundingClientRect().top;
+  const header = document.querySelector('#main-header');
+  header.style.transform = `translateZ(${t * 0.01}px) scale(${1 - t * 0.00005})`;
+}
+
+function scrollHandler() {
+  moveCamera();
+  moveProjectDescriptions();
+  moveHeader();
+
+  var scrollPosition = window.pageYOffset;
+  var quoteBlock = document.getElementById('scrollQuote');
+
+  if (scrollPosition > 4200) {  // you can adjust this value
+    quoteBlock.style.transform = 'translate3d(0, 0, 0)';
+  } else {
+    quoteBlock.style.transform = 'translate3d(100%, 0, 0)';
+  }
+}
+
+document.body.onscroll = () => {
+  moveCamera();
+  moveProjectDescriptions();
+  moveHeader(); // Call moveHeader function during scroll
+};
 animate();
