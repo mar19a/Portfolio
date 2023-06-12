@@ -2,7 +2,7 @@ Mariano's Personal Portfolio Website
 
 Welcome to the repository of my personal portfolio website. This website showcases my academic background, projects I've worked on, and relevant work experiences. It's designed to provide a unique, engaging, and dynamic user experience using 3D web design.
 
-Table of Contents
+Table of Contents:
 
 Introduction
 
