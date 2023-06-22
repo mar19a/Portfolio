@@ -44,7 +44,7 @@ JavaScript
 
 Three.js
 
-Node.js
+Node.js.
 
 
 Installation:
