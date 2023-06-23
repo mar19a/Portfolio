@@ -42,7 +42,7 @@ CSS3
 
 JavaScript
 
-Three.js
+Three.js.
 
 Node.js.
 
